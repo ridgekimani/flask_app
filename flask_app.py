@@ -5,7 +5,10 @@ app = Flask(__name__)
 
 @app.route('/hello/', methods=['GET'])
 def hello():
-    return render_template('hello2.html')
+    """ The @app.route is the one that the browser will use to point
+        to the url being used
+    """
+    return render_template('hello2.html') 
 
 
 @app.route('/', methods=['GET'])
