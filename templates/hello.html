@@ -8,7 +8,9 @@
 Awesome
 </body>
 <a href="{{ url_for('hey') }}">Go to another page</a>
+ <script src="{{ url_for('static', filename='script.js') }}"></script>
 </html>
+
 {#
 url for points to the function that you have written
 if you have static files, js and css,,
@@ -19,6 +21,7 @@ if you have static files, js and css,,
  app
   - tests
   - static
+     -script.js
      -jquery
        - jquery.min.js
 
