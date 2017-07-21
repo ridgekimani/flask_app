@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome title</title>
+</head>
+<body>
+Awesome body
+<a href="{{ url_for('hey') }}">Get to the other page</a>
+
+</body>
+</html>
+{#
+url for points to the function that you have written
+if you have static files, js and css,,
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+ <script src="{{ url_for('static', filename='jquery/jquery.min.js') }}"></script>
+
+ where your directory structure is
+ app
+  - tests
+  - static
+     -jquery
+       - jquery.min.js
+
+  - templates
+        - hello.html
+        - hello2.html
+  - app.py
+
+
+
+#}
